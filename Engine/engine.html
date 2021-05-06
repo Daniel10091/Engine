@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine</title>
+</head>
+<body>
+    <div class="engine">
+        <div class="rotate">
+            <div class="a"> <!-- circle -->
+                <div class="center"></div>
+            </div>
+            <div class="b"></div>
+            <div class="c"></div>
+            <div class="d"></div>
+            <div class="e"></div>
+            <div class="f"></div>
+            <div class="g"></div>
+            <div class="h"></div>
+            <div class="i"></div>
+        </div>
+        <div class="rotates">
+            <div class="a"> <!-- circle -->
+                <div class="center"></div>
+            </div>
+            <div class="b"></div>
+            <div class="c"></div>
+            <div class="d"></div>
+            <div class="e"></div>
+            <div class="f"></div>
+            <div class="g"></div>
+            <div class="h"></div>
+            <div class="i"></div>
+        </div>
+    </div>
+
+    <style>
+        html{
+            background: #0B2429;
+        }
+
+        .engine{
+            width: 1000px;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        .rotate{
+            display: block;
+            width: 200px;
+            height: 200px;
+            background: #0B2429;
+            margin: 20% 300px;
+            animation-name: Anim;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes Anim{
+            0% {transform: rotate(2turn);}
+        }
+
+        .rotates{
+            display: block;
+            width: 200px;
+            height: 200px;
+            background: #0B2429;
+            margin: -18.5% 44.5%;
+            animation-name: anima;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes anima{
+            100% {transform: rotate(2turn);}
+        }
+
+        .center{
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            align-items: center;
+            background: #0B2429;
+            border-radius: 50%;
+            box-shadow:
+                0 0 0 15px #F3AC3C,
+                0 0 0 30px #0B2429
+        }
+
+        .a{
+            display: flex;
+            width: 200px;
+            height: 200px;
+            margin: auto 0px;
+            background: #F3AC3C;
+            border-radius: 50%;
+        }
+
+        .b{
+            width: 50px;
+            height: 40px;
+            display: flex;
+            margin: -120px -40px;
+            background: #F3AC3C;
+            border-radius: 10px;
+        }
+
+        .c{
+            display: flex;
+            width: 50px;
+            height: 40px;
+            margin: 80px 190px;
+            background: #F3AC3C;
+            border-radius: 10px;
+        }
+
+        .d{
+            display: flex;
+            width: 40px;
+            height: 50px;
+            margin: -240px 80px;
+            background: #F3AC3C;
+            border-radius: 10px;
+        }
+
+        .e{
+            display: flex;
+            width: 40px;
+            height: 50px;
+            margin: 420px 80px;
+            background: #F3AC3C;
+            border-radius: 10px;
+        }
+
+        .f{
+            display: flex;
+            width: 50px;
+            height: 40px;
+            margin: -660px -6px;
+            transform: rotate(.120turn);
+            background: #F3AC3C;
+            border-radius: 10px;
+        }
+
+        .g{
+            width: 50px;
+            height: 40px;
+            display: flex;
+            margin: 620px 158px;
+            transform: rotate(.380turn);
+            background: #F3AC3C;
+            border-radius: 10px;
+        }
+
+        .h{
+            display: flex;
+            width: 50px;
+            height: 40px;
+            margin: -499px 155px;
+            transform: rotate(.130turn);
+            background: #F3AC3C;
+            border-radius: 10px;
+        }
+
+        .i{
+            display: flex;
+            width: 50px;
+            height: 40px;
+            margin: 458px -6px;
+            transform: rotate(.375turn);
+            background: #F3AC3C;
+            border-radius: 10px;
+        }
+
+
+    </style>
+</body>
+</html>
